@@ -1,0 +1,11 @@
+//Global font-variables
+:root {
+  --main-font: 'Inter', sans-serif;
+  --secondary-font: 'Cinzel Decorative', serif;
+
+  --900-40: 900 40px/125% var(--secondary-font);
+  --700-32: 700 32px/125% var(--secondary-font);
+  --700-24: 700 24px/125% var(--main-font);
+  --700-20: 700 20px/125% var(--secondary-font);
+  --700-16: 700 16px/125% var(--main-font);
+}

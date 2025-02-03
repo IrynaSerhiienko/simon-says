@@ -1,0 +1,35 @@
+.body {
+  background-image: url(./../../assets/bg.jpg);
+  background-size: cover;
+}
+
+.limiting-container {
+  display: flex;
+  max-width: 1440px;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+
+  @media screen and (min-width: 360px) {
+    padding: 0 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 340px;
+  height: auto;
+  margin: 0 auto;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+    height: auto;
+  }
+}

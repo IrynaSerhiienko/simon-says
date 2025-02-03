@@ -1,0 +1,21 @@
+.level {
+  &__level-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__radio-wrapper {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__radio-button {
+    accent-color: var(--dark);
+  }
+
+  &__radio-label {
+    font: var(--700-24);
+    color: var(--text-dark);
+  }
+}

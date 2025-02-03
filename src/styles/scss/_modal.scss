@@ -1,0 +1,99 @@
+.modal {
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  &__modal-window {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 270px;
+    height: auto;
+    border-radius: 5px;
+    background-color: var(--beige);
+    border: 1px solid var(--beige);
+    cursor: pointer;
+    padding: 16px;
+
+    @media screen and (min-width: 768px) {
+      width: 600px;
+      height: auto;
+      padding: 40px;
+    }
+
+    @media screen and (min-width: 1440px) {
+      width: 700px;
+    }
+  }
+
+  &__round {
+    font: var(--700-32);
+
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  &__game-result {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font: var(--700-20);
+    color: var(--primary);
+
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  &__button {
+    &--close {
+      position: absolute;
+      top: -40px;
+      right: -40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid var(--dark);
+      background-color: var(--basic);
+      font: var(--700-24);
+      color: var(--beige);
+      transition: all ease-in-out 0.3s;
+
+      @media (hover: hover) {
+        &:hover {
+          color: var(--dark);
+        }
+      }
+    }
+  }
+
+  &__gif-container {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__gif {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
